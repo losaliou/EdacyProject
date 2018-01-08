@@ -1,12 +1,5 @@
-/**
- * 
- */
-package edacy;
-
-/**
- * @author ndia
- *
- */
+package model;
+// déclaration de la classe Talent
 public class Talent {
 	private String nom;
 	private String prenom;
@@ -14,6 +7,7 @@ public class Talent {
 	private String niveau;
 	private String cours;
 
+// constructeur Talent
 	public Talent(String nom, String prenom, int age, String niveau, String cours) {
 		super();
 		this.nom = nom;
@@ -22,50 +16,36 @@ public class Talent {
 		this.niveau = niveau;
 		this.cours = cours;
 	}
-	@Override
-	public String toString() {
-		return "Talent [nom=" + nom + ", prenom=" + prenom + ", age=" + age + ", niveau=" + niveau + ", cours=" + cours
-				+ "]";
-	}
+	
+	// recuperation du nom
 	public String getNom() {
 		return nom;
 	}
 
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
+	// recuperation du prenom
 	public String getPrenom() {
 		return prenom;
 	}
-
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
-	}
-
+	
+	// recuperation de l'age
 	public int getAge() {
 		return age;
 	}
 
-	public void setAge(int age) {
-		this.age = age;
-	}
-
+	// recuperation du niveau
 	public String getNiveau() {
 		return niveau;
 	}
 
-	public void setNiveau(String niveau) {
-		this.niveau = niveau;
-	}
-
+	// recuperation du cours de spécialisation
 	public String getCours() {
 		return cours;
 	}
-
-	public void setCours(String cours) {
-		this.cours = cours;
+	
+	//print d'un Talent
+	public String toString() {
+		return "Le nom du talent est: " + nom + ", son prenom:" + prenom +
+				", age:" + age + ", niveau: " + niveau + ", cours: " + cours;
 	}
-
 
 }
